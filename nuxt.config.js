@@ -93,10 +93,22 @@ export default {
         'postcss-easing-gradients': postcssEasingGradients
       }
     },
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    extend(config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.module.rules.forEach(rule => {
+          if (rule.use) {
+            rule.use.forEach(use => {
+              if (use.loader === 'babel-loader') {
+                use.options.cacheDirectory = true
+              }
+              if (use.loader === 'cache-loader') {
+                use.options.cacheDirectory = true
+              }
+            })
+          }
+        })
+      }
+    },
   },
   /*
    ** Custom additions configuration
