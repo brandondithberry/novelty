@@ -13,13 +13,7 @@
   p {
     color: var(--text);
     @apply transition-colors duration-200 ease-in-out;
-    & + h1,
-    & + h2,
-    & + h3,
-    & + h4,
-    & + h5,
-    & + h6,
-    & + p {
+    :is(h1, h2, h3, h4, h5, h6, p) {
       @apply mt-4;
     }
   }
@@ -29,7 +23,7 @@
       font-sans
       font-bold
       text-2xl
-      leading-tight
+      leading-relaxed
       tracking-tight;
   }
 
@@ -38,7 +32,7 @@
       font-sans
       font-semibold
       text-xl
-      leading-tight
+      leading-normal
       tracking-tight;
   }
 
@@ -47,7 +41,7 @@
       font-sans
       font-bold
       text-xl
-      leading-tight;
+      leading-normal;
   }
 
   h4 {
@@ -55,13 +49,13 @@
       font-sans
       font-normal
       text-xl
-      leading-tight;
+      leading-normal;
   }
 
   h5 {
     @apply
       text-lg
-      leading-tight
+      leading-normal
       tracking-wide;
   }
 
@@ -69,7 +63,7 @@
     @apply
       font-light
       text-lg
-      leading-tight
+      leading-normal
       tracking-wide
       uppercase;
   }
@@ -78,13 +72,7 @@
     color: var(--text);
     @apply font-sans leading-normal transition-colors duration-200 ease-in-out;
 
-    & + h1,
-    & + h2,
-    & + h3,
-    & + h4,
-    & + h5,
-    & + h6,
-    & + p {
+    :is(h1, h2, h3, h4, h5, h6, p) {
       @apply mt-4;
     }
 
@@ -96,7 +84,7 @@
   }
 
   a {
-    color: var(--text-secondary);
+    color: var(--text-black);
     @apply transition-colors duration-200 ease-in-out;
   }
 
@@ -114,12 +102,7 @@
     max-width: 80ch;
     @apply my-8;
 
-    & h1,
-    & h2,
-    & h3,
-    & h4,
-    & h5,
-    & h6 {
+    :is(h1, h2, h3, h4, h5, h6) {
       & > a {
         &::before {
           content: "#";
@@ -214,7 +197,7 @@
 
   @screen md {
     h1 {
-      @apply text-4xl leading-none;
+      @apply text-4xl;
     }
 
     h2 {
