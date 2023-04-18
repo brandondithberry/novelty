@@ -5,7 +5,7 @@
         <div class="heading flex flex-col w-full">
           <div class="text max-w-xl">
             <h1>
-            Advanced RevOps for HubSpot Enterprise customers.
+            Advanced Solutions for HubSpot Enterprise customers.
           </h1>
           <h4 class="pt-4">
             Maximize HubSpot ROI with strategic design and implemention for advanced Enterprise features.
