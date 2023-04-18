@@ -11,7 +11,7 @@
             Maximize HubSpot ROI with strategic design and implemention for advanced Enterprise features.
           </h4>
           <p class="pt-4 text-primary-700">
-            Custom Objects, HubDB, Coded Actions, Data Sets, Scoring & More
+            Custom Objects, Coded Actions, Data Sets, Scoring & More.
           </p>
         </div>
       </div>
@@ -23,6 +23,11 @@
       <div class="right flex justify-end items-center w-1/2">
         <img class="art" src="img/art.svg" alt="Home Banner Art">
       </div>
+    </section>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
     </section>
   </main>
 </template>
