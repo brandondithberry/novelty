@@ -29,7 +29,7 @@
     "hard-source-webpack-plugin": "^0.13.1",
     "netlify-cli": "^11.1.0",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.25",
     "postcss-easing-gradients": "^3.0.1",
     "postcss-preset-env": "^7.8.0",
     "prettier": "^2.6.2",
